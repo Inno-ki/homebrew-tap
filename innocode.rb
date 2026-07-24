@@ -5,22 +5,22 @@
 class Innocode < Formula
   desc "The AI coding agent built for the terminal."
   homepage "https://github.com/Inno-ki/innocode"
-  version "1.0.235"
+  version "1.0.237"
 
   depends_on "ripgrep"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Inno-ki/innocode/releases/download/v1.0.235/innocode-darwin-x64.zip"
-      sha256 "591cb283b92618b91644df3ef7dcb577f1a046d9d2bcdbc14913bc8ed3983efd"
+      url "https://github.com/Inno-ki/innocode/releases/download/v1.0.237/innocode-darwin-x64.zip"
+      sha256 "194782e8d4a87d4674e71ac2d3861dde98bdfe341bfadc081d707f42a210d451"
 
       def install
         bin.install "innocode"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Inno-ki/innocode/releases/download/v1.0.235/innocode-darwin-arm64.zip"
-      sha256 "9c5bae662250b1df68be734196e906bfedccede91f9c565ceea23475e484a96e"
+      url "https://github.com/Inno-ki/innocode/releases/download/v1.0.237/innocode-darwin-arm64.zip"
+      sha256 "a66e093716a57793432993a22855b7460e121268e7c40fa0d1406b93b1542888"
 
       def install
         bin.install "innocode"
@@ -30,15 +30,15 @@ class Innocode < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/Inno-ki/innocode/releases/download/v1.0.235/innocode-linux-x64.tar.gz"
-      sha256 "a74212a533e70fc67f44e60ce0a79fa6a92962781dbafa7870c0f866ec4c221f"
+      url "https://github.com/Inno-ki/innocode/releases/download/v1.0.237/innocode-linux-x64.tar.gz"
+      sha256 "cd278120c37815b87fffa4510fd69dca7726b6883713475a6f1035fc5efaea9e"
       def install
         bin.install "innocode"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/Inno-ki/innocode/releases/download/v1.0.235/innocode-linux-arm64.tar.gz"
-      sha256 "5d41384161b2c8e095660a06e51beb847eb2dc3c5b03157fa282fe3d35da5263"
+      url "https://github.com/Inno-ki/innocode/releases/download/v1.0.237/innocode-linux-arm64.tar.gz"
+      sha256 "29d2c935aec51aca50d46e1a28befb73b307cdf596b08462229e11ba960c63e8"
       def install
         bin.install "innocode"
       end
